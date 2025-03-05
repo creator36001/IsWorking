@@ -160,7 +160,3 @@
 141,442,2882,14468498661769125490,COMPLETED
 163,558,2882,3484698302004660175,COMPLETED
 127,385,3019,10428287470066556828,COMPLETED
-# IsWorking
-intended to be used in testing, it takes our putput and tests if it worked as fast as you wanted it to
-
-Takes a string and a couple parameters and outputs if the outputs per secont is above or below the intended speed
