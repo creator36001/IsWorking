@@ -6,7 +6,8 @@ public class IsWorking{
 
 
 public String[][] listData(String stringData){
-
+    int rowCount = 0;
+    int colCount = 0;
     int commaCount = 0;
 
         for(int i = 0; i < stringData.length(); i++){
@@ -16,9 +17,8 @@ public String[][] listData(String stringData){
         }
     String[][] PackData = new String[commaCount/4][commaCount];
 
-        for(int i = 0; i < commaCount; i++){
-            if()
-        }
+        //for(int i = 0; i < commaCount; i++){
+            //StringData.split(,);
 
     return PackData;
 }
