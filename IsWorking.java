@@ -3,11 +3,11 @@
 public class IsWorking{
 
 //String data = data.csv;
-
+//readData.ReadFile(data.csv);
 
 public String[][] listData(String stringData){
-    int rowCount = 0;
-    int colCount = 0;
+    //int rowCount = 0;
+    //int colCount = 0;
     int commaCount = 0;
 
         for(int i = 0; i < stringData.length(); i++){
