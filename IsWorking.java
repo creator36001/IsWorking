@@ -1,26 +1,29 @@
-
+import java.util.ArrayList;
+import java.util.List;
 //import data.csv;
 public class IsWorking{
-
+   // ArrayList <InfoRow> dataArray = ReadData.readFile("data.csv");
 //String data = data.csv;
-//readData.ReadFile(data.csv);
 
-public String[][] listData(String stringData){
-    //int rowCount = 0;
-    //int colCount = 0;
-    int commaCount = 0;
+public static void readData(ArrayList<InfoRow> stringData){
+    ArrayList <InfoRow> dataArray = ReadData.readFile("data.csv");
+    int numCongruent = 0;
+    int failNum = 0;
+    double failPercent = 0.0;
 
-        for(int i = 0; i < stringData.length(); i++){
-            if (stringData.charAt(i) == 'b'){
-            commaCount++;
-            }
+//for(int i = 0; i < dataArray.size(; i++)){}
+
+
+
+
+    for(int i = 0; i < dataArray.size(); i++){
+        if(dataArray.get(i).getStatus() == false){
+            failNum ++;
         }
-    String[][] PackData = new String[commaCount/4][commaCount];
+    }
+    failPercent = (failNum / dataArray.size());
 
-        //for(int i = 0; i < commaCount; i++){
-            //StringData.split(,);
-
-    return PackData;
+    System.out.println("fail % : " + failPercent);
 }
 
 
