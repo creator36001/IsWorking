@@ -2,10 +2,10 @@ public class InfoRow {
     private int index;
     private int start;
     private int end;
-    private int taskID;
+    private String taskID;
     private boolean status;
 
-    public InfoRow(int index, int start, int end, int taskID, boolean status){
+    public InfoRow(int index, int start, int end, String taskID, boolean status){
 
         this.index = index;
         this.start = start;
@@ -20,7 +20,7 @@ public class InfoRow {
 
     public int getEnd(){return end;}
 
-    public int getTaskID(){return taskID;}
+    public String getTaskID(){return taskID;}
     
     public boolean getStatus(){return status;}
 

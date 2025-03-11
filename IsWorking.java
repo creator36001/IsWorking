@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.List;
+//import java.util.List;
 //import data.csv;
 public class IsWorking{
    // ArrayList <InfoRow> dataArray = ReadData.readFile("data.csv");
@@ -11,17 +11,15 @@ public static void readData(ArrayList<InfoRow> stringData){
     int failNum = 0;
     double failPercent = 0.0;
 
-//for(int i = 0; i < dataArray.size(; i++)){}
-
-
-
-
     for(int i = 0; i < dataArray.size(); i++){
         if(dataArray.get(i).getStatus() == false){
             failNum ++;
         }
     }
     failPercent = (failNum / dataArray.size());
+
+
+
 
     System.out.println("fail % : " + failPercent);
 }

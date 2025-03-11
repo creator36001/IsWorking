@@ -20,7 +20,7 @@ public class ReadData {
         else{
             done = false;
         }
-        InfoRow currentRow = new InfoRow(Integer.parseInt(row[0]), Integer.parseInt(row[1]), Integer.parseInt(row[2]), Integer.parseInt(row[3]), done);
+        InfoRow currentRow = new InfoRow(Integer.parseInt(row[0]), Integer.parseInt(row[1]), Integer.parseInt(row[2]), row[3], done);
         infoList.add(currentRow);
         System.out.println(row[0] + "," + row[1] + "," + row[2] + "," + row[3] + "," + row[4]);
 
