@@ -7,6 +7,7 @@ public class IsWorking{
 
 public static void readData(ArrayList<InfoRow> stringData){
     ArrayList <InfoRow> dataArray = ReadData.readFile("data.csv");
+    ArrayList <int> frequency = new arrayList<>();
     int numCongruent = 0;
     int failNum = 0;
     double failPercent = 0.0;
@@ -18,10 +19,20 @@ public static void readData(ArrayList<InfoRow> stringData){
     }
     failPercent = (failNum / dataArray.size());
 
+for(int i = 0; i < dataArray.size(); i++){
 
+for(int j = dataArray.get(i).getStart(); j < dataArray.get(i).getEnd; j++){
+    frequency.set(j, frequency.get(j) + 1);
+}
+
+
+
+
+}
 
 
     System.out.println("fail % : " + failPercent);
+    System.out.println(frequency.get(1) + "-" + frequency.get(1));
 }
 
 
