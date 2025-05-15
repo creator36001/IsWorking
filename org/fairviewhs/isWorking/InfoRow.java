@@ -1,3 +1,5 @@
+package org.fairviewhs.isWorking;
+
 public class InfoRow {
     private int index;
     private int start;
